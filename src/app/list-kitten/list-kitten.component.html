@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="listKitten row col-8">
+      <p>Liste des chatons à adopter</p>
+      <ul>
+        <div *ngFor="let c of chatons" class="border border-2 m-3">
+          <div>
+            <img src={{c.image}} alt="{{c.nom}}">
+          </div>
+          <div>
+            Nom : {{c.nom}}
+          </div>
+          <div>
+            Race : {{c.race}}
+          </div>
+          Date de naissance : {{c.dateNaissance}}
+          <button class="btn btn-primary" type="button" (click)= adopCat(c.id) >Adopter ce chat</button>
+        </div>
+      </ul>
+    </div>
+    <div class="userKitten row col-4">
+      <app-user-kitten [mesChatons]="mesChatons"></app-user-kitten>
+    </div>
+  </div>
+</div>
+<app-create-kitten [chatons]="chatons"></app-create-kitten>

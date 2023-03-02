@@ -1,0 +1,51 @@
+[
+  {
+    "id": 0,
+    "nom": "Tango",
+    "race": "American curl",
+    "dateNaissance": 2022,
+    "image": "../../assets/chaton1.jpg"
+  },
+  {
+    "id": 1,
+    "nom": "Tigris",
+    "race": "Asian",
+    "dateNaissance": 2022,
+    "image": "../../assets/chaton2.jpg"
+  },
+  {
+    "id": 2,
+    "nom": "Ursula",
+    "race": "Bobtail américain",
+    "dateNaissance": 2023,
+    "image": "../../assets/chaton3.jpg"
+  },
+  {
+    "id": 3,
+    "nom": "Ulrick",
+    "race": "Brazilian shorthair",
+    "dateNaissance": 2023,
+    "image": "../../assets/chaton4.jpg"
+  },
+  {
+    "id": 4,
+    "nom": "Ulisse",
+    "race": "Burmese",
+    "dateNaissance": 2023,
+    "image": "../../assets/chaton5.jpg"
+  },
+  {
+    "id": 5,
+    "nom": "Sylvestre",
+    "race": "Chartreux",
+    "dateNaissance": 2021,
+    "image": "../../assets/chaton6.jpg"
+  },
+  {
+    "id": 6,
+    "nom": "Rocky",
+    "race": "Sacré de Birmanie",
+    "dateNaissance": 2020,
+    "image": "../../assets/chaton7.jpg"
+  }
+]

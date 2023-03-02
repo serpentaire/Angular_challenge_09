@@ -1,0 +1,38 @@
+<h1 class="p-4 text-center">Ajouter un chat</h1>
+<form [formGroup]="formGroup" #myForm="ngForm" (ngSubmit)="formGroup.valid && onSubmit()">
+  <div class="p-2 text-center">
+    <p>Nom du chat</p>
+    <input type="texte" placeholder="Nom du chat" formControlName="nom"/>
+    <div *ngIf="formGroup.get('nom')?.errors && inValidate === true">
+      <div class="text-danger" *ngIf="formGroup.get('nom')?.errors">le nom est requis</div>
+    </div>
+  </div>
+<div class="p-2 text-center">
+  <p>Race du chat</p>
+  <input type="texte" placeholder="Race du chat" formControlName="race"/>
+  <div *ngIf="formGroup.get('race')?.errors && inValidate === true">
+    <div class="text-danger" *ngIf="formGroup.get('race')?.errors">la race est requis</div>
+  </div>
+</div>
+  <div class="p-2 text-center">
+    <p>Année du chat</p>
+    <input type="texte" placeholder="Année du chat" formControlName="dateNaissance"/>
+    <div *ngIf="formGroup.get('dateNaissance')?.errors && inValidate === true">
+      <div class="text-danger" *ngIf="formGroup.get('dateNaissance')?.errors">l'année de naissance est requis</div>
+    </div>
+  </div>
+  <div class="p-2 text-center">
+    <p>Image du chat</p>
+    <input type="texte" placeholder="image" formControlName="image"/>
+    <div *ngIf="formGroup.get('image')?.errors && inValidate === true">
+      <div class="text-danger" *ngIf="formGroup.get('image')?.errors">une image est requis</div>
+    </div>
+  </div>
+
+  <div class="p-2 text-center">
+    <button class="btn btn-primary" type="submit" (click)="handleValidate()">
+      Ajouter le chat
+    </button>
+  </div>
+</form>
+
